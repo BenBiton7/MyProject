@@ -1,0 +1,104 @@
+body{
+    background-image: url(/Images/tile.jpg);
+}
+#titleOfBoard{
+    font-family: 'Lobster', cursive;
+    font-size: 3.2rem;
+    margin-block: none;
+    text-align: center;
+}
+#container{
+    background-image: url(/Images/formbg.jpg);
+    width: 40%;
+    margin: auto;
+}
+
+#myForm{
+    margin-top: 10px;
+    padding: 1rem;
+}
+
+#inputs{
+    margin-left: 61px;
+    
+}
+.myInputs{
+    border: none;
+    outline: none;
+    background-color: inherit;
+    font-family: 'Lobster', cursive;
+}
+.justButtons{
+text-align: center;
+padding-top: 19px;
+
+}
+.submit ,.resetBtn{
+    border-radius: 20px;
+}
+.submit{
+    background-color: rgb(8, 248, 8);
+}
+.resetBtn{
+    background-color: rgb(252, 7, 7);
+}
+.debug{
+    outline: 1px solid red;
+}
+.note{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(/Images/notebg.png);
+    width: 220px;
+    height: 260px;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-inline-start: 25px;
+    padding-block: 10px;
+    font-family: 'Unbounded', cursive;
+    position: relative;
+    overflow: hidden;
+   
+}
+.note:hover .delete-btn{
+  transform: translateX(0);
+  
+}
+#myRes{
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.date{
+   font-size: 14px;
+}
+.delete-btn{
+    position: absolute;
+    top: 28px;
+    right: 38px;
+    width:30px;
+    transform: translateX(300%);
+    transition: transform 0.6s;
+
+}
+h3{
+    margin-top: 35px;
+    word-wrap: break-word;
+    padding-right: 40px;
+    overflow-y: auto;
+    max-height: 200px;
+    font-size: 20px;
+}
+@keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  .fade-in {
+    animation: fade-in 1s ease-in;
+  }
+
+
+   
